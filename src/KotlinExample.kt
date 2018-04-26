@@ -5,13 +5,14 @@ import java.util.*
 fun main(args: Array<String>) {
     var a: Int? = null
 
-    if (a != null) {
-        println(a)
-    } else {
-        println(" a is null ")
-    }
+//    if (a != null) {
+//        println(a)
+//    } else {
+//        println(" a is null ")
+//    }
 
-    println(getEvenAndOddNumbers(List(100, {i -> i + 1})))
+//    println(getEvenAndOddNumbers(List(100, {i -> i + 1})))
+    displayRectangle(5, 7, true)
 }
 
 class MathList(val min: Int, val max: Int, val sum: Int)
@@ -43,4 +44,23 @@ fun getEvenAndOddNumbers(numbers: List<Int>): Pair<List<Int>, List<Int>> {
         }
     }
     return Pair(evenNumbers, oddNumbers)
+}
+
+fun displayRectangle(width: Int, height: Int, empty: Boolean) {
+
+    for (i in 1..height) {
+        var string = ""
+        for (j in 1..width) {
+            if (empty) {
+                if (i == 1 || i == height || j == 1 || j == width) {
+                    string += "* "
+                } else {
+                    string += "  "
+                }
+            } else {
+                string += "* "
+            }
+        }
+        println(string)
+    }
 }
