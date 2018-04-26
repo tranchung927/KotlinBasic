@@ -14,7 +14,8 @@ fun main(args: Array<String>) {
 //    println(getEvenAndOddNumbers(List(100, {i -> i + 1})))
 //    displayRectangle(5, 7, true)
 //    displayTriangle(10)
-    isoscelesTriangle(10, true)
+//    isoscelesTriangle(10, true)
+    removeVowel("chaunogahhhillle")
 }
 
 class MathList(val min: Int, val max: Int, val sum: Int)
@@ -107,3 +108,15 @@ fun isoscelesTriangle(height: Int, reverse: Boolean) {
         println(string)
     }
 }
+
+fun removeVowel(string: String) {
+    var listChars: MutableList<Char> = string.toMutableList()
+    var copy = string
+    for (char in string) {
+        if (listOf('u', 'e', 'o', 'a', 'i').contains(char)) {
+            copy = copy.replace(char.toString(), "")
+        }
+    }
+    println(copy)
+}
+
