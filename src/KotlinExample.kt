@@ -73,7 +73,7 @@ fun displayTriangle(height: Int) {
             string += " "
         }
         for (j in i..i * 2 - 1) {
-            string += "*"
+            string += "* "
         }
         println(string)
     }
