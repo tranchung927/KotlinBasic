@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
 
 //    println(getEvenAndOddNumbers(List(100, {i -> i + 1})))
     displayRectangle(5, 7, true)
+    displayTriangle(10)
 }
 
 class MathList(val min: Int, val max: Int, val sum: Int)
@@ -60,6 +61,19 @@ fun displayRectangle(width: Int, height: Int, empty: Boolean) {
             } else {
                 string += "* "
             }
+        }
+        println(string)
+    }
+}
+
+fun displayTriangle(height: Int) {
+    for (i in 1..height) {
+        var string = ""
+        for (n in 1..i) {
+            string += " "
+        }
+        for (j in i..i * 2 - 1) {
+            string += "*"
         }
         println(string)
     }
