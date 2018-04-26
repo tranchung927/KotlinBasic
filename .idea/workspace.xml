@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92eb4104-4e6c-4434-85d9-97d926541c88" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Playground/META-INF/Playground.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Playground/hello/KotlinExampleKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Playground/hello/MathList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playground/hello/KotlinExampleKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Playground/hello/KotlinExampleKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playground/hello/MathList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Playground/hello/MathList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KotlinExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/KotlinExample.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,11 @@
       <file leaf-file-name="KotlinExample.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/KotlinExample.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="642">
+              <caret line="131" column="56" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
+              <folding>
+                <element signature="e#15#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,6 +39,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
@@ -246,6 +251,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="e#15#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -265,8 +273,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KotlinExample.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="642">
+          <caret line="131" column="56" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
+          <folding>
+            <element signature="e#15#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 package hello
 
 import java.util.*
+import kotlin.math.sqrt
 
 fun main(args: Array<String>) {
     var a: Int? = null
@@ -15,8 +16,10 @@ fun main(args: Array<String>) {
 //    displayRectangle(5, 7, true)
 //    displayTriangle(10)
 //    isoscelesTriangle(10, true)
-    removeVowel("chaunogahhhillle")
+//    removeVowel("chaunogahhhillle")
+    println(checkPrime(1))
 }
+
 
 class MathList(val min: Int, val max: Int, val sum: Int)
 
@@ -120,3 +123,19 @@ fun removeVowel(string: String) {
     println(copy)
 }
 
+fun checkPrime(number: Int): Boolean {
+    var isPrime: Boolean = false
+    if (number > 2) {
+        if (number % 2 == 0) {
+            isPrime = false
+        } else {
+            for (i in 3..sqrt(number.toDouble()).toInt() step 2) {
+                isPrime = number % i != 0
+                if (!isPrime) break
+            }
+        }
+    } else {
+        isPrime = number == 2
+    }
+    return isPrime
+}
