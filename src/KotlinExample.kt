@@ -12,8 +12,9 @@ fun main(args: Array<String>) {
 //    }
 
 //    println(getEvenAndOddNumbers(List(100, {i -> i + 1})))
-    displayRectangle(5, 7, true)
-    displayTriangle(10)
+//    displayRectangle(5, 7, true)
+//    displayTriangle(10)
+    isoscelesTriangle(10, true)
 }
 
 class MathList(val min: Int, val max: Int, val sum: Int)
@@ -72,8 +73,36 @@ fun displayTriangle(height: Int) {
         for (n in 1..i) {
             string += " "
         }
-        for (j in i..i * 2 - 1) {
+        for (j in i..(i * 2) - 1) {
             string += "* "
+        }
+        println(string)
+    }
+}
+
+fun isoscelesTriangle(height: Int, reverse: Boolean) {
+    for (i in 1..height) {
+        var string = ""
+        if (reverse) {
+            for (n in 1..i) {
+                string += "-"
+            }
+            for (j in i..(height * 2) - i) {
+                string += "*"
+            }
+            for (k in 1..i) {
+                string += "-"
+            }
+        } else {
+            for (n in i..height) {
+                string += "-"
+            }
+            for (j in 1..(i * 2) - 1) {
+                string += "*"
+            }
+            for (k in i..height) {
+                string += "-"
+            }
         }
         println(string)
     }
