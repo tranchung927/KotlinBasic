@@ -1,6 +1,7 @@
 package hello
 
 import java.util.*
+import kotlin.math.abs
 import kotlin.math.sqrt
 
 fun main(args: Array<String>) {
@@ -17,7 +18,8 @@ fun main(args: Array<String>) {
 //    displayTriangle(10)
 //    isoscelesTriangle(10, true)
 //    removeVowel("chaunogahhhillle")
-    println(checkPrime(1))
+//    println(checkPrime(1))
+    println(mathUCLNBCNN(6, -20))
 }
 
 
@@ -138,4 +140,14 @@ fun checkPrime(number: Int): Boolean {
         isPrime = number == 2
     }
     return isPrime
+}
+
+fun mathUCLNBCNN(a: Int, b: Int): Pair<Int, Int> {
+    var _a = abs(a)
+    var _b = abs(b)
+    if (_a == 0 || _b == 0) return Pair((a + b), 0)
+    while (_a != _b) {
+        if (_a > _b) _a = _a - _b else _b = _b - _a
+    }
+    return  Pair(_a, a*b/_a)
 }
